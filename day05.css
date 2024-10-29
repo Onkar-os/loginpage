@@ -1,0 +1,96 @@
+/* Foolish background with clashing colors */
+body {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00); /* Wild gradient */
+    font-family: 'Comic Sans MS', cursive; /* Because... foolish developers love it! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Over-the-top glassmorphism form */
+form {
+    background: rgba(255, 255, 255, 0.25); /* Transparent, glassy background */
+    border-radius: 25px; /* Rounded corners that are way too round */
+    padding: 50px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 40px #ff00ff, 0 0 60px #00ffff; /* Glowing shadow */
+    backdrop-filter: blur(15px);
+    animation: spin 10s linear infinite; /* Why not make the form spin? */
+    border: 3px solid #ffcc00;
+}
+
+/* Making everything exaggerated */
+h2 {
+    font-size: 2.5em; /* Huge text */
+    color: #ff0000; /* Bright red! */
+    text-shadow: 2px 2px #ffff00; /* Double shadow for fun */
+    animation: bounce 1s infinite; /* Make it bounce! */
+}
+
+/* Crazy animated inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 3px dashed #ff0000; /* Dashed red borders, of course */
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    font-size: 1.2em;
+    color: #00ff00; /* Green text! */
+    transition: transform 0.3s, background-color 0.3s; /* Make it grow when you focus */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    transform: scale(1.1); /* Slightly bigger on focus */
+    background-color: #00ff00; /* Neon green when focused */
+    color: #ff0000; /* And red text for good measure */
+}
+
+/* Buttons with way too much going on */
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff); /* Loud background */
+    border: 2px solid #ffcc00;
+    border-radius: 50px; /* Super-rounded */
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+    animation: buttonShake 1s infinite; /* The button just won’t stop shaking */
+}
+
+button:hover {
+    background: #ff0000; /* Turns into a red button on hover */
+    transform: rotate(10deg); /* Why not rotate the button a bit */
+}
+
+/* Labels get their own wild treatment */
+label {
+    color: #ff00ff; /* Bright purple */
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px;
+    text-shadow: 2px 2px #00ffff; /* Glowing shadow */
+}
+
+/* Some over-the-top animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes buttonShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
